@@ -1,11 +1,11 @@
 {
-    "name"       : "danerina.com",
-    "description": "The open source website for Leslie Verploegen's and Eric Ferraiuolo's wedding.",
+    "name"       : "----",
+    "description": "open source wedding.",
     "homepage"   : "http://danerina.com/",
     "version"    : "2.2.6",
     "private"    : true,
 
-    "author": "Dan Scholl <daniel.scholl@gmail.com>",
+    "author": "Andrew Hinger <andrewjhinger@gmail.com>",
 
     "license": "MIT",
 
@@ -27,7 +27,6 @@
 
     "dependencies": {
         "async"              : "0.2.x",
-        "bower"              : "1.2.x",
         "combohandler"       : "0.2.x",
         "csv"                : "0.3.x",
         "db-migrate"         : "0.4.x",
@@ -42,7 +41,7 @@
     },
 
     "scripts": {
-        "install": "./node_modules/bower/bin/bower install",
-        "migrate-up": "./node_modules/db-migrate/bin/db-migrate up -e default --config config/migrations.json"
+        "migrate-up": "./node_modules/db-migrate/bin/db-migrate up -e default --config config/migrations.json",
+        "debug": "node --debug server.js"
     }
 }
